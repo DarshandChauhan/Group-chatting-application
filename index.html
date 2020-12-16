@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Chat App</title>
+  <!--- whenever a user access index.html , this script will fire the events necessary -->
+  <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="flexbox-container">
+    <div class="flexbox-item flexbox-item-1">
+      <div id="message-container"></div>
+          <form id="send-container">
+            <input type="text" id="message-input">
+            <button type="submit" id="send-button">Send</button>
+          </form>
+    </div>
+    <div class="flexbox-item flexbox-item-1">
+      <h1>Online Users</h1>
+      <hr>
+      <div id="online-container"></div>
+    </div>
+  </div>
+</body>
+</html>
